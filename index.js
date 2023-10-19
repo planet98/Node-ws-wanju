@@ -13,7 +13,7 @@ const errcb = (...args) => console.error.bind(this, ...args);
 const uuid = (process.env.UUID || 'de04add9-5c68-6bab-950c-08cd5320df37').replace(/-/g, "");
 // const NEZHA_SERVER = process.env.NEZHA_SERVER || 'nz.aaa.com:5555';
 // const NEZHA_KEY = process.env.NEZHA_KEY || 'zbcdefghijabcdefg';
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8000;
 
 // 创建HTTP服务
 const httpServer = http.createServer((req, res) => {
